@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de CEP e Cálculo de Frete</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<center>
+
+
+<body>
+    <h1 id="titulo">Consulta de CEP e Cálculo de Frete</h1>
+
+    <div id="cepSearch">
+        <h2>Consulta de CEP</h2>
+        <input type="text" id="cepInput" placeholder="Digite o CEP">
+        <button onclick="searchCEP()">Buscar</button>
+        <div id="cepResult"></div>
+    </div>
+
+    <div id="logradouroSearch">
+        <h2>Busca por Logradouro</h2>
+        <input type="text" id="ufInput" placeholder="UF">
+        <input type="text" id="cidadeInput" placeholder="Cidade">
+        <input type="text" id="logradouroInput" placeholder="Logradouro">
+        <button onclick="searchLogradouro()">Buscar</button>
+        <div id="logradouroResult"></div>
+    </div>
+
+    <div id="freteCalculator">
+        <h2>Calculadora de Frete</h2>
+        <input type="text" id="origemCEPInput" placeholder="CEP de origem">
+        <input type="text" id="destinoCEPInput" placeholder="CEP de destino">
+        <input type="text" id="pesoInput" placeholder="Peso da entrega (em kg)">
+        <button onclick="calculateFrete()">Calcular</button>
+        <div id="freteResult"></div>
+    </div>
+
+    <script src="script.js"></script>
+</center>
+</body>
+</html>

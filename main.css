@@ -1,0 +1,48 @@
+body {
+    
+    font-family:"Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#cepSearch, #logradouroSearch, #freteCalculator {
+    margin-bottom: 20px;
+}
+
+input[type="text"], button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 35px;
+    border-radius: 6px;
+    border-color: lightgray;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #d374b6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e00c92;
+}
+
+
+#cepResult, #logradouroResult, #freteResult {
+    margin-top: 10px;
+}
+
